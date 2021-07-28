@@ -3,12 +3,12 @@ agent any
 
 
  stages {
-stage('checkout') {
-steps {
+//stage('checkout') {
+// steps {
 // Get some code from a GitHub repository
-git branch: 'main', url: 'https://github.com/spjawale/jgsu-spring-petclinic.git'
-}
-}
+// git branch: 'main', url: 'https://github.com/spjawale/jgsu-spring-petclinic.git'
+// }
+// }
 stage('build'){
 steps {
 sh 'mvn clean package'
